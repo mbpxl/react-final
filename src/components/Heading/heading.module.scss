@@ -1,0 +1,23 @@
+.heading {
+  margin: 96px 0 0 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 30px;
+      line-height: 120%;
+      color: #222222;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 121%;
+      color: #9f9f9f;
+      text-align: center;
+    }
+  }
+}

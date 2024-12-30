@@ -1,0 +1,45 @@
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.catalog {
+  margin: 48px 0 0 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.see_all {
+  margin-top: 48px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    a {
+      min-width: 212px;
+      min-height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f26376;
+      font-size: 16px;
+      line-height: 118%;
+      color: #f26376;
+      background-color: #fff;
+
+      transition: 0.23s;
+    }
+
+    a:hover {
+      color: #fff;
+      background-color: #f26376;
+    }
+  }
+}

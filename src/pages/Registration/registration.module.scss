@@ -1,0 +1,196 @@
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+
+.reg {
+  margin: 64px 0 0 0;
+
+  &__container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__form {
+      max-width: 360px;
+  }
+
+  &__adv {
+      margin-left: 22px;
+  }
+
+  @media (max-width: 630px) {
+      &__container {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+
+  @media (max-width: 630px) {
+      &__adv {
+          max-width: 360px;
+      }
+  }
+}
+
+.form {
+  &__title {
+      margin-bottom: 20.2px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 118%;
+      color: #222222;
+  }
+
+  &__info {
+      display: flex;
+      flex-direction: column;
+
+      input {
+          padding: 0 17px;
+          width: 100%;
+          height: 45px;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 123%;
+          border: 1px solid #a4a4a4;
+      }
+
+      input::placeholder {
+          color: #b1b1b1;
+      }
+
+      input:first-child {
+          margin-bottom: 21px;
+      }
+  }
+
+  &__gender {
+      margin: 31.5px 0 33px 0;
+
+      label {
+          padding-right: 20px;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 123%;
+
+          input:first-child {
+              margin-right: 10px;
+          }
+      }
+  }
+
+  p {
+      margin: 15.5px 0 39px 0;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 123%;
+      color: #b1b1b1;
+  }
+
+  button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px;
+      width: 167px;
+      height: 50px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 121%;
+      color: #ffffff;
+      background: #f16d7f;
+      border: 2px solid #f16d7f;
+
+      cursor: pointer;
+      transition: 0.32s;
+
+      svg > path {
+          transition: 0.32s;
+      }
+  }
+
+  button:hover {
+      background-color: #fff;
+      color: #f16d7f;
+  }
+
+  button:hover .form__img {
+      fill: #f16d7f;
+  }
+
+  @media (max-width: 510px) {
+      button {
+          margin: 0 auto;
+      }
+  }
+}
+
+.adv {
+  h2 {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 120%;
+      color: #000000;
+  }
+
+  p {
+      margin: 22px 0;
+      max-width: 558px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 118%;
+      color: #000000;
+  }
+
+  &__list {
+      li {
+          font-weight: 300;
+          font-size: 22px;
+          line-height: 115%;
+          color: #000000;
+      }
+
+      li::before {
+          content: url(../img/cheked.svg);
+          padding-right: 23px;
+      }
+
+      li:not(:last-child) {
+          margin-bottom: 16.6px;
+      }
+  }
+
+  @media (max-width: 790px) {
+      &__list {
+          li {
+              font-size: 16px;
+              line-height: 118%;
+          }
+      }
+  }
+
+  @media (max-width: 768px) {
+      h2 {
+          font-size: 16px;
+          line-height: 118%;
+      }
+  }
+
+  @media (max-width: 630px) {
+      h2 {
+          margin-top: 40px;
+      }
+  }
+
+  @media (max-width: 425px) {
+      &__list {
+          li {
+              font-size: 14px;
+          }
+      }
+  }
+}

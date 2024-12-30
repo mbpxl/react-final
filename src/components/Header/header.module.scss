@@ -1,0 +1,135 @@
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+.header {
+  background: #222222;
+  position: relative;
+  z-index: 55;
+
+  &__container {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left a:last-child {
+    padding: 0 0 0 41px;
+  }
+
+  &__right {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right a:nth-child(2) {
+    padding: 0 33px;
+  }
+
+  &__right_bin {
+    position: relative;
+  }
+
+  &__right_bin_count {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    width: 19px;
+    height: 19px;
+    background-color: #ef5b70;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    z-index: 50;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 75px;
+    right: -100%;
+    overflow: auto;
+  }
+
+  &__opened {
+    right: 0;
+  }
+
+  &__nav.active {
+    right: 0;
+  }
+
+  @media (max-width: 425px) {
+    &__right a:not(:first-child) {
+      display: none;
+    }
+
+    &__right a:first-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.nav {
+  max-width: 232px;
+  background-color: #fff;
+  transition: 0.6s;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 17px 0 0;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 121%;
+    color: #000000;
+    padding: 9px 143px 24px 32px;
+  }
+
+  &__heading {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 121%;
+    color: #f16d7f;
+    padding: 0 144px 0 33px;
+  }
+
+  &__list {
+    padding-left: 55px;
+  }
+
+  &__list li {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 121%;
+    color: #6f6e6e;
+    padding-top: 12px;
+  }
+
+  &__list li:last-child {
+    padding-bottom: 20px;
+  }
+
+  &__list_end {
+    margin-bottom: 157px;
+  }
+}
